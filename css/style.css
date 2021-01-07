@@ -19,7 +19,8 @@ html, body {
 }
 
 header {
-    background-color: #d6d6d6;
+    background-color: rgb(220, 220, 220);
+    /*background-color: #d6d6d6;*/
     padding: 10px 2% 40px 2%;
 }
 
@@ -65,6 +66,7 @@ section.cover-form {
     height: 105%;
     box-shadow: 1px 2px 1px 1px rgb(180, 180, 180);
     background-color: white;
+    opacity: 0.96;
     /*background-color: green;*/
 }
 
@@ -120,6 +122,18 @@ section.chamada {
     text-align: center;
 }
 
+.icone-seta {
+	position: absolute;
+	left: 50%;
+	top: 610px;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+    background-image: url('../images/arrow.png');
+}
+
 section.chamada .container{
     padding: 50px 0 50px 0;
     background-color: #29526d;
@@ -144,6 +158,63 @@ section.chamada p {
     font-weight: normal;
 }
 
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1-mosaico {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico {
+    background-color: #275d81;
+    padding: 100px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico p {
+    color: white;
+}
+
+footer {
+    
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container:last-child {
+    background-color: rgb(220, 220, 220);
+    /*background-color: #d6d6d6;*/
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+
+	.bg{
+		height: auto;
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	.form-container{
+		text-align: left;
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+    }
+    
+    .icone-seta {
+        top: 760px;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .bg {
         padding: 40px 0;
@@ -158,10 +229,29 @@ section.chamada p {
         position: static;
         display: inline-block;
     }
+
+    .icone-seta {
+        top: 690px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item-1-mosaico {
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico {
+        text-align: justify;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 550px) {
-
     header {
         text-align: center;
     }
@@ -170,5 +260,9 @@ section.chamada p {
         margin-top: 10px;
         display: inline-block;
         float: none;
+    }
+
+    .icone-seta {
+        top: 768px;
     }
 }
