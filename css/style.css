@@ -28,7 +28,7 @@ header {
     float: left;
     width: 230px;
     height: 75px;
-    background-image: url(../images/logo1.png);
+    background-image: url('../images/logo1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +39,7 @@ header {
     float: right;
     width: 200px;
     height: 56px;
-    background-image: url(../images/logo2.png);
+    background-image: url('../images/logo2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,7 +54,7 @@ section.cover-form {
     position: relative;
     height: 510px;
     background-position: center;
-    background-image: url(../images/bg-form.jpg);
+    background-image: url('../images/bg-form.jpg');
     background-size: cover;
 }
 
